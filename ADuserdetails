@@ -1,8 +1,0 @@
-
-$username = Read-Host "What is the Username?" 
-$domain = Read-Host "What is the domain? dynonobel.net / iplgroup.net/ sco" 
-
- 
-Get-ADUser -server $domain -identity $username -properties * | select Name, DisplayName, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, 
-
-b, EmailAddress, PrimaryGroup 
