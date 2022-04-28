@@ -1,4 +1,6 @@
 ﻿
+#this script is designed to fetch user details from Active Directory after choising the desired domain. Replace any fields with brackets <>
+
 $username = Read-Host "What is the Username?" 
 
 function Show-Menu {
