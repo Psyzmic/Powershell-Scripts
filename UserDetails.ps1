@@ -5,13 +5,13 @@ $username = Read-Host "What is the Username?"
 
      $ErrorActionPreference = ‘SilentlyContinue’
 
-        Get-ADUser -server <domain 1> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup, Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired -erroraction silentlycontinue
+        Get-ADUser -server <domain 1> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup, Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired
 
-        Get-ADUser -server <domain 2> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup, Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired Err -erroraction silentlycontinue
+        Get-ADUser -server <domain 2> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup, Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired 
     
-        Get-ADUser -server <domain 3> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup , Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired -erroraction silentlycontinue
+        Get-ADUser -server <domain 3> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup , Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired
  
-        Get-ADUser -server <domain 4> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup, Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired -erroraction silentlycontinue
+        Get-ADUser -server <domain 4> -identity $username -properties * | select Name, DisplayName, title, DistinguishedName, Department, Company, l, Manager, telephoneNumber, ipPhone, mobilePhone, b, EmailAddress, PrimaryGroup, Enabled, AccountExpirationDate, PasswordLastSet, PasswordExpired
         
         
 
