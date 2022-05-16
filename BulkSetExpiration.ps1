@@ -2,7 +2,7 @@
 
 #define usercsv folder path before proceeding
 
-$userscsv = @('C:\users\ccatucci\users.csv') 
+$userscsv = @('C:\tmp\users.csv') 
 $users = Import-Csv -Path "$userscsv" -Encoding UTF8
 $date = Read-Host "What is the expiration date? (Day/Month/Year 00:00:00)"
 $domain = Read-Host "What is the domain?"
